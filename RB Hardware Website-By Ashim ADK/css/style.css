@@ -1,0 +1,588 @@
+/* Utility Section */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+/* Heading Section */
+
+.nav {
+    display: flex;
+}
+
+.nav .logo {
+    height: 304px;
+}
+
+.nav ul li a,
+.nav ul li {
+    display: inline;
+    color: #333333;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    padding-left: 14px;
+}
+
+.nav ul {
+    margin-top: 92px;
+    margin-left: 410px;
+}
+
+.nav ul li a:hover {
+    background-color: #fff;
+    color: #0040ff;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.menu-bar {
+    height: 40px;
+    margin-top: 84px;
+}
+
+.header {
+    text-align: center;
+    height: 64.8vh;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+.header p {
+    font-size: 38px;
+    font-weight: bold;
+    padding: 23px;
+}
+
+.header h1 span {
+    color: white;
+    font-size: 50px;
+}
+
+.header p span {
+    color: white;
+    font-size: 38px;
+}
+
+.header span {
+    font-size: 27px;
+    color: #000000c2;
+    font-weight: bolder;
+}
+
+/* About Section */
+
+.about-img {
+    position: absolute;
+}
+
+.about-img img {
+    margin-top: 20px;
+    height: 355px;
+    margin-left: 800px;
+}
+
+.about {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 743px;
+}
+
+.about h1 {
+    font-size: 45px;
+    margin-bottom: 19px;
+}
+
+.sennep {
+    margin-bottom: 26px;
+    color: #333333;
+    font-size: 16px;
+}
+
+.seneng {
+    margin-bottom: 80px;
+    color: #333333;
+    font-size: 18px;
+}
+
+.learn {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #000000e8;
+    padding: 16px;
+    margin-right: 29px;
+    position: relative;
+    z-index: 10;
+    /* If other element overlap with learn button, button not work and we need to use z-index*/
+}
+
+.contactt {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #000000e8;
+    padding: 16px;
+    margin-right: 29px;
+    position: relative;
+    z-index: 10;
+    /* If other element overlap with contact button, button not work and we need to use z-index*/
+}
+
+.learn:hover,
+.contactt:hover {
+    background-color: #0040ff;
+    transition: 2s;
+}
+
+/* Services Section */
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.services h1 {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.services p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px #0000001a;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.service-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.service-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #666666;
+}
+
+
+.service-card:hover {
+    background: #0040ff4d;
+}
+
+/* Products Section */
+
+.products {
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.products h1 {
+    font-size: 36px;
+    color: #333333;
+}
+
+.product p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+.product-container {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 6px 10px 18px #00000071;
+    padding: 35px;
+    margin-left: 12px;
+    width: 250px;
+    transition: 1s;
+    margin-bottom: 20px;
+}
+
+.product-card:hover {
+    background-color: #0040ff4d;
+}
+
+.product-card img {
+    height: 140px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.product-card h2 {
+    cursor: pointer;
+}
+
+.product-card p {
+    margin-bottom: 12px;
+    color: #555;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.products h4,
+a {
+    text-align: end;
+    margin-right: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Contact Section */
+
+.contact-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.contact-info div {
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-section h2 {
+    padding-left: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.map {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.map iframe {
+    max-width: 600px;
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    font-size: 18px;
+    background-color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.contact a:hover {
+    background-color: #0040ff2a;
+    color: #000;
+}
+
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #333333;
+    color: #fff;
+}
+
+footer p {
+    padding-top: 13px;
+    padding-left: 13px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Product Nav */
+
+.nav1 {
+    display: flex;
+    background-color: #fff;
+}
+
+/* Search Button */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    width: 700px;
+    height: 50px;
+    margin-top: 120px;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    color: #333;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex-grow: 1;
+    color: #333;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+
+.impinfo {
+    position: absolute;
+    background-color: #E0E0E0;
+    color: #000;
+    width: 85%;
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 35px;
+    margin-left: 110px;
+}
+
+.iconnav{
+    display: none;
+}
+
+/* For Mobile */
+
+@media only screen and (max-width: 670px) {
+    .nav img {
+        height: 150px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .header h1 span {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .header p {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .header p span {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .spann {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .nav .textnav{
+        display: none;
+    }
+
+    .iconnav{
+        display: flex;
+    }
+
+    .iconnav img{
+        position: relative;
+        height: 35px;
+        right: 430px;
+        bottom: 50px;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .about {
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    .about h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .about p {
+        margin-left: 5px;
+    }
+
+    .service-card {
+        margin-right: 10px;
+    }
+
+    .products p {
+        font-size: 18px;
+    }
+
+    .product-card {
+        display: block;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-container {
+        padding-left: 110px;
+        padding-right: 10px;
+        overflow: scroll;
+    }
+    
+    .contact-info {
+        margin-bottom: 20px;
+    }
+
+    .impinfo {
+        display: none;
+    }
+
+    .search-bar{
+        position: absolute;
+        top: 100px;
+        width: 96%;
+        margin-left: 8px;
+    }
+
+    .message-section{
+        height: 110vh;
+    }
+
+    .message-form{
+        padding-top: 40vh;
+        position: absolute;
+        right: 1%;
+    }
+
+    .input-group{
+        margin-left: 16px;
+        width: 95%;
+    }
+
+    .input-icon{
+        margin-left: 16px;
+    }
+
+    .submit-btn{
+        width: 85%;
+        margin-left: 36px;
+    }
+
+    .info-item{
+        margin-right: 20px;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+}

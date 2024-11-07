@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Pipes",
+        "description": "Durable, corrosion-resistant pipes ideal for hot and cold water systems.",
+        "image": "productsimg/product1.png"
+    },
+    {
+        "name": "Fittings",
+        "description": "High-quality fittings for various plumbing applications.",
+        "image": "productsimg/product2.png"
+    }
+]
